@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row row-margin-top">
+                <div class="col-sm-6 marginAuto form-border">
+                    <div class="row text-center text-white bg-danger">
+                        <div class="col">
+                            <div class="p-3 mb-2 bg-danger text-white header-reg-form">Registration Form</div>
+                        </div>
+                    </div>
+                    <div class="p-3 mb-2">
+                        <div class="form-group">
+                            <label for="email">User Name:</label>
+                            <input type="text" class="form-control" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">First Name:</label>
+                            <input type="text" class="form-control" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Last Name:</label>
+                            <input type="text" class="form-control" name="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Address:</label>
+                            <textarea rows="4" class="form-control" ng-model="vm.registration.address" name="address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="c_password" name="c_password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender:</label> Male <input type="radio" checked="vm.registration.gender=='M'" name="gender"
+                                required ng-model="vm.registration.gender" value='M' /> Female <input type="radio" checked="vm.registration.gender=='F'"
+                                name="gender" ng-model="vm.registration.gender" value='F' />
+                        </div>
+                        <div class="form-group">
+                                <a class="btn btn-primary" routerLink="/login">back</a>
+                            <button class="btn btn-info" ng-disabled="registration.$pristine || registration.$invalid" ng-click="vm.register()">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
