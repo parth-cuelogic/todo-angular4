@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { UserService } from '../../common/services/user.service';
+import { User } from '../../common/classes/user.class';
+
 
 @Component({
     selector: 'app-register',
@@ -8,16 +11,26 @@ import { UserService } from '../../common/services/user.service';
     styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-    user: any = {};
+    user = <User>{};
 
+    regFail: boolean = false;
     constructor(
-        userService: UserService
+        private userService: UserService,
+        private router: Router
     ) { }
 
     register() {
         let self = this;
 
-        console.log(self.user);
+        let user = self.userService.registerUser(self.user);
+
+        if (user) {
+            self.regFail = false;
+            self.router.navigate(['/login']);
+            return;
+        }
+
+        self.regFail = true;
     }
 
     passwordChangeHandler(key, ngForm) {
