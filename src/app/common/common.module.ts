@@ -31,6 +31,7 @@ import { AuthenticationService } from './services/authentication.service';
         TooltipModule.forRoot(),
         TypeaheadModule.forRoot()
     ],
+    exports:[],
     providers: [
         UserService,
         AuthenticationService

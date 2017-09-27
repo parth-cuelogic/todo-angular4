@@ -6,41 +6,18 @@ import { AppComponent } from './app.component';
 import { CommonModule } from './common/common.module';
 import { FormsModule } from '@angular/forms';
 
-// import RootRoutes from './app.router';
-import { LoginComponent } from './component/login/login.component';
-import { RegisterComponent } from './component/register/register.component';
-import { PagesComponent } from './component/pages.component';
+import { RootRoutes, RootComponents } from './app.router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent
+    RootComponents
   ],
   imports: [
     BrowserModule,
     FormsModule,
     CommonModule,
-
-    RouterModule.forRoot([
-      {
-        path: '',
-        redirectTo: '/login',
-        pathMatch: 'full'
-      },
-      {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: 'register',
-        component: RegisterComponent
-      },
-      {
-        path:'pages',
-        loadChildren:'./component/pages.module#PagesModule'
-      }
-    ])
+    RootRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
