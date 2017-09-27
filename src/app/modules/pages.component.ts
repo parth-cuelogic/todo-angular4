@@ -6,7 +6,7 @@ import { AuthenticationService } from '../common/services/authentication.service
 @Component({
     selector: 'pages',
     templateUrl: './pages.component.html',
-    styleUrls: ['./pages.component.css']
+    styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent {
     user = undefined;

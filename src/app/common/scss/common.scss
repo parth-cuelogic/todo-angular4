@@ -1,0 +1,86 @@
+.navbar-color{
+    color:white !important
+}
+
+.navbar-position{
+    justify-content: flex-start !important;
+}
+
+.marginAuto{
+    margin: auto !important;
+}
+.header-reg-form{
+    font-size: 1.2rem !important;
+    line-height: 1 !important;
+}
+.form-border{
+    border:1px solid #dc3545;
+}
+.row-margin-top{
+    margin-top: 1.5rem;
+}
+.login-form-border{
+    border:1px solid #17a2b8;
+}
+.nav, .pagination, .carousel, .panel-title, .container-fluid a { cursor: pointer; }
+
+.col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.padding-zero{
+    padding:0;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px
+}
+
+div._720kb-datepicker-calendar._720kb-datepicker-open{
+    width: 50px;
+    position: absolute;
+    top: 36px;
+}
+
+input.ng-dirty.ng-invalid {
+    border:1px solid red;
+}
+
+.img-div:hover img{
+    opacity: 0.5;
+}
+.img-div:hover span{
+    display: block;
+}
+
+.img-div span{
+    display: none;
+}
+.pencil-pos{
+    position: absolute !important;
+    left: 0 !important;
+    font-size: 1.5em !important;
+    top: 62px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+.pencil-pos-2{
+    position: absolute;
+    left: 84px !important;
+    font-size: 1.5em !important;
+    top: 129px !important;
+    right: 0px !important;
+    bottom: 0 !important;
+}
+
+div.modal.fade {
+    background-color: rgba(0,0,0,.5);
+    opacity: 1; 
+    padding-top: 15%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
