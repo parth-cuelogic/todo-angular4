@@ -13,7 +13,7 @@ import { ChildRoutes,ChildComponents } from './pages.route';
         ChildComponents
     ],
     imports: [
-        ChildRoutes
+        ChildRoutes,
     ],
 })
 export class PagesModule { }
